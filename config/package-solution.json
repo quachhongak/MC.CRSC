@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "crsc-prompts-client-side-solution",
+    "id": "78129526-906c-4fcc-a6c0-8a8949793917",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": false,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.18.2"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "crsc-prompts description"
+      },
+      "longDescription": {
+        "default": "crsc-prompts description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "crsc-prompts Feature",
+        "description": "The feature that activates elements of the crsc-prompts solution.",
+        "id": "096c44e6-2ee4-46e7-a903-958bdc5f9cf3",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/crsc-prompts.sppkg"
+  }
+}

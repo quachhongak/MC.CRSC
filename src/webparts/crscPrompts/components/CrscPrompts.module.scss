@@ -1,0 +1,161 @@
+@import '~@fluentui/react/dist/sass/References.scss';
+
+.crscPrompts {
+  color: "[theme:bodyText, default: #323130]";
+  color: var(--bodyText, #323130);
+  font-family: $ms-font-family-fallbacks;
+}
+
+.filterPanel {
+  background: "[theme:neutralLighter, default: #f3f2f1]";
+  padding: 20px;
+}
+
+.searchRow,
+.filterRow,
+.resultsBar,
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.searchBox {
+  flex: 1;
+  max-width: 640px;
+}
+
+.filterRow {
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+
+.filtersLabel {
+  margin: 0 8px 0 0;
+}
+
+.filterDropdown {
+  width: 190px;
+}
+
+.sortGroup {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: auto;
+}
+
+.sortDropdown {
+  width: 190px;
+}
+
+.resultsBar {
+  justify-content: space-between;
+  min-height: 64px;
+}
+
+.pagination {
+  white-space: nowrap;
+  gap: 6px;
+}
+
+.bottomPagination {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 16px;
+}
+
+.pageButton {
+  min-width: 32px;
+  padding: 0 8px;
+}
+
+.promptGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.promptCard {
+  border: 1px solid;
+  padding: 0;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.deliverableTag {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  background: #0078d4;
+  color: #004578;
+  padding: 5px 10px;
+  font-weight: 600;
+}
+
+.promptTitle {
+  font-size: 18px;
+  line-height: 1.35;
+  margin: 12px 0;
+}
+
+.promptContent {
+  padding: 16px;
+}
+
+.paddingBottomMedium {
+  padding-bottom: 8px;
+}
+
+.viewButton {
+  margin-top: 14px;
+}
+
+.configureButton,
+.statusMessage {
+  margin-top: 16px;
+}
+
+.promptDetails {
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+.detailField {
+  margin-bottom: 14px;
+}
+
+.detailValue {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 640px) {
+  .filterPanel {
+    padding: 14px;
+  }
+
+  .filterRow {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .filterDropdown,
+  .sortDropdown {
+    width: 100%;
+  }
+
+  .sortGroup {
+    margin-left: 0;
+  }
+
+  .resultsBar {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 12px 0;
+  }
+
+  .promptGrid {
+    grid-template-columns: 1fr;
+  }
+}
