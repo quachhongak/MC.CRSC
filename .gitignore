@@ -10,10 +10,9 @@ node_modules
 dist
 lib
 release
-solution
 temp
-*.sppkg
 .heft
+sharepoint/solution/debug
 
 # Coverage directory used by tools like istanbul
 coverage
